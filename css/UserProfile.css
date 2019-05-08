@@ -1,0 +1,226 @@
+body {
+    font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300; 
+    color: #575c7a;
+    line-height: 1.5em;
+    font-size: 14px;
+    background: #09C6C8  url(../images/gradient.jpg) repeat-x 0px 0px;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    background-color: #eee;
+}
+
+a.no_decoration {
+    text-decoration: none;
+    margin: 0.5em 0 0 0;
+    padding: 0.01em;
+    color: blue;
+}
+
+a.no_decoration:hover {
+    color: brown;
+}
+
+.para p {
+    line-height: 1.2em;
+    font-size: 0.95 em;
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+    align-content: center;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: darkorange;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    position: static;
+    height: 60px;
+    background-color: #566472;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 50 10 10 10;
+}
+
+
+nav {
+    display: inline-block;
+    position: absolute;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    position: static;
+    background-color: #566472;
+    text-align: center;
+    margin-bottom: 5px:
+}
+
+.main-content {
+    padding: 50px 20px 50px 20px;
+    margin-top: 2px; 
+    border-bottom: 1px solid #ccc;
+}
+
+.group-1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    height: 150px;
+    float: left;
+}
+
+.user_pic {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 196px;
+    height: 196px;
+    float: left;
+}
+
+
+.group-1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.group-1 {
+    padding: 2px 16px;
+}
+
+.group-2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 20px;
+    width: auto;
+    height: 150px;
+    float: left;
+}
+
+.group-2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.group-2 {
+    padding: 2px 16px;
+}
+
+.group-3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    margin-left: 20px;
+    height: 150px;
+    float: left;
+}
+
+.group-3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.group-3 {
+    padding: 2px 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+    grid-gap: 1em;
+}
+
+.grid > div {
+  background: #EDE7F6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.user_description {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 840px;
+    margin-left: 20px;
+    height: auto;
+    float: left;
+	font-size:26px
+}
+
+.user_description:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.user_comments {
+    padding: 2px 16px 0px 0px;
+}
+
+.user_comments {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 840px;
+    margin-left: 20px;
+    height: auto;
+    float: left;
+	font-size:26px
+}
+
+.user_comments:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.user_comments {
+    padding: 2px 16px 0px 0px;
+}
+
+
+.navigation-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+	grid-template-rows:196 196
+    grid-gap: 3rem;
+}
+
+.links {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.settings {
+    text-align: left;
+}
+
+.accountImage {
+    float: left;
+}
+
+.accountName {
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
