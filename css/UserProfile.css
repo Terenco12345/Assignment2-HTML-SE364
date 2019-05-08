@@ -87,69 +87,12 @@ nav {
     border-bottom: 1px solid #ccc;
 }
 
-.group-1 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: auto;
-    height: 150px;
-    float: left;
-}
-
-.user_pic {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 196px;
-    height: 196px;
-    float: left;
-}
-
-
-.group-1:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.group-1 {
-    padding: 2px 16px;
-}
-
-.group-2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin-left: 20px;
-    width: auto;
-    height: 150px;
-    float: left;
-}
-
-.group-2:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.group-2 {
-    padding: 2px 16px;
-}
-
-.group-3 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: auto;
-    margin-left: 20px;
-    height: 150px;
-    float: left;
-}
-
-.group-3:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.group-3 {
-    padding: 2px 16px;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: auto auto;
-	grid-template-rows: auto auto;
+	grid-template-areas:
+	'user_pic user_description'
+	'user_comments user_comments'
+	'user_comments1 user_comments1';
     grid-gap: 1em;
 }
 
@@ -159,6 +102,19 @@ nav {
   border-radius: 1rem;
 }
 
+.user_pic {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 196px;
+    height: 196px;
+    float: left;
+	grid-area:user_pic;
+}
+
+.user_pic:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .user_description {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -166,7 +122,10 @@ nav {
     margin-left: 20px;
     height: auto;
     float: left;
-	font-size:26px
+	font-size:26px;
+    padding: 2px 16px 0px 0px;
+	grid-area:user_description;
+
 }
 
 .user_description:hover {
@@ -174,27 +133,34 @@ nav {
 }
 
 .user_comments {
-    padding: 2px 16px 0px 0px;
-}
-
-.user_comments {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 840px;
-    margin-left: 20px;
+    width: auto;
     height: auto;
     float: left;
-	font-size:26px
+	font-size:26px;
+    padding: 2px 16px 0px 0px;
+	grid-area:user_comments
 }
 
 .user_comments:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.user_comments {
+.user_comments1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    height: auto;
+    float: left;
+	font-size:26px;
     padding: 2px 16px 0px 0px;
+	grid-area:user_comments1
 }
 
+.user_comments1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 .navigation-grid {
     display: grid;
