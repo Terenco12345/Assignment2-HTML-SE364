@@ -92,7 +92,8 @@ nav {
 	grid-template-areas:
 	'user_pic user_description'
 	'user_comments user_comments'
-	'user_comments1 user_comments1';
+	'user_comments1 user_comments1'
+	'user_comments2 user_comments2';
     grid-gap: 1em;
 }
 
@@ -106,7 +107,7 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 196px;
-    height: 196px;
+    height: 200px;
     float: left;
 	grid-area:user_pic;
 }
@@ -159,6 +160,21 @@ nav {
 }
 
 .user_comments1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.user_comments2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    height: auto;
+    float: left;
+	font-size:26px;
+    padding: 2px 16px 0px 0px;
+	grid-area:user_comments2
+}
+
+.user_comments2:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
