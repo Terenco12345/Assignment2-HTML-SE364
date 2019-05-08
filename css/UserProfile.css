@@ -90,10 +90,10 @@ nav {
 .grid {
     display: grid;
 	grid-template-areas:
-	'user_pic user_description'
-	'user_comments user_comments'
-	'user_comments1 user_comments1'
-	'user_comments2 user_comments2';
+	'user_pic user_description right_bar'
+	'user_comments user_comments comment_box'
+	'user_comments1 user_comments1 comment_box'
+	'user_comments2 user_comments2 comment_box';
     grid-gap: 1em;
 }
 
@@ -116,10 +116,64 @@ nav {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.right_bar {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    height: auto;
+    float: left;
+	font-size:20px;
+	grid-area:right_bar;
+}
+
+.right_bar:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.comment_box {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    margin-left: 0px;
+    height: auto;
+    float: left;
+	font-size:26px;	
+    padding: 2px 16px 0px 0px;
+	grid-area:comment_box;
+	text-align: center;
+}
+
+.comment_box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+input[type=button]{
+	background-color:darkorange;
+	border:none;
+	color:white;
+	padding:16px 32px;
+	text-decoration:none;
+	margin:4px 2px;
+	cursor: pointer;
+}
+
+
+textarea{
+	width:auto;
+	height: 350px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius:4px;
+	font-size:15px;
+	resize:none;
+}
+
+
 .user_description {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 840px;
+    width: auto;
     margin-left: 20px;
     height: auto;
     float: left;
