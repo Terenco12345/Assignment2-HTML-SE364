@@ -1,0 +1,148 @@
+body {
+    font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #575c7a;
+    line-height: 1.5em;
+    font-size: 14px;
+    background: #09C6C8  url(../images/gradient.jpg) repeat-x 0px 0px;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    background-color: #eee;
+}
+
+a.no_decoration {
+    text-decoration: none;
+    margin: 0.5em 0 0 0;
+    padding: 0.01em;
+    color: blue;
+}
+
+a.no_decoration:hover {
+    color: brown;
+}
+
+.para p {
+    line-height: 1.2em;
+    font-size: 0.95 em;
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+    align-content: center;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: darkorange;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    position: static;
+    height: 60px;
+    background-color: #566472;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 50 10 10 10;
+}
+
+
+nav {
+    display: inline-block;
+    position: absolute;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    position: static;
+    background-color: #566472;
+    text-align: center;
+    margin-bottom: 5px:
+}
+
+.main-content {
+    padding: 50px 20px 50px 20px;
+    margin-top: 2px;
+    border-bottom: 1px solid #ccc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto 100px;
+    grid-gap: 1rem;
+}
+
+.grid > div {
+  background: #EDE7F6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.navigation-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3rem;
+}
+
+.links {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.settings {
+    text-align: left;
+}
+
+.accountImage {
+    float: left;
+}
+
+.accountName {
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.left-side{
+  float: left;
+}
+
+.right-side{
+  margin-top: 100px;
+  float: right;
+}
+
+.right-side>form>div{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submit>button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}

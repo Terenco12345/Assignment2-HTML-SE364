@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewpoint" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="css/profileEditor.css"/>
+
+    <title> GROUP APPLICATION </title>
+
+</head>
+
+<body>
+  <div class="page">
+
+    <nav>
+      <div class = "navigation-grid">
+        <div class="links">
+          <a href=""> HOME </a>
+          <a href=""> GROUPS </a>
+          <a href=""> CALENDER </a>
+          <a href=""> MESSAGES </a>
+          <a href=""> SETTINGS </a>
+        </div>
+
+        <div class="settings">
+          <div class="accountImage"> <img src="images/user_account.png" style="width: 40px; height: 40px; margin: 5px" title="USER" alt="USER ACCOUNT"> </div>
+          <div class="accountName"> <h4> <b> JOHN DOE </b> </h4> </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="grid">
+        <div class="content-box">
+
+          <div class="left-side">
+            <div class="profile-pic">
+              <img src="images/user_account.png" style="display: block; width: 150px; height: 150px; margin: 5px" title="Profile Picture" alt="PROFILE PICTURE">
+              <button type="button" name="profile-pic-button" style="display: block; margin-bottom: 40px">Change Picture</button>
+            </div>
+            <div class="biography">
+              <label for="bio-box" style="display: block">Biography:</label>
+              <textarea name="biography-box" id="bio-box" rows="20" cols="40" style="resize: none"></textarea>
+            </div>
+          </div>
+
+          <div class="right-side">
+
+            <div class="submit" style="display: block; margin-bottom: 100px">
+              <button type="button" name="submit-button">Submit changes</button>
+            </div>
+
+            <form style="margin-bottom: 20px">
+                <div class="firstname-input">
+                  <label for="firstname-box">First name:</label>
+                  <input type="text" id="firstname-box" name="firstname">
+                </div>
+
+                <div class="lastname-input">
+                  <label for="lastname-box">Last name:</label>
+                  <input type="text" id="lastname-box" name="lastname">
+                </div>
+
+                <div class="date-input">
+                  <label for="date-box">Date of birth:</label>
+                  <input type="date" id="date-box" name="date">
+                </div>
+
+                <h4>Contact details</h4>
+                <div class="phone-input">
+                  <label for="phone-box">Phone number:</label>
+                  <input type="text" id="phone-box" name="phone">
+                </div>
+
+                <div class="email-input">
+                  <label for="email-box">Email:</label>
+                  <input type="email" id="email-box" name="email">
+                </div>
+              </form>
+              <div class="social-media-buttons">
+                <p style="display: block">Social Media:</p>
+                <a href="">
+                  <img src="./images/facebook.png" style="display: inline; width: 40px; height: 40px; margin: 5px" alt="FACEBOOK">
+                </a>
+                <a href="">
+                  <img src="./images/twitter.png" style="display: inline; width: 40px; height: 40px; margin: 5px" alt="TWITTER">
+                </a>
+                <a href="">
+                  <img src="./images/googleplus.png" style="display: inline; width: 40px; height: 40px; margin: 5px" alt="GOOGLEPLUS">
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
